@@ -1,11 +1,17 @@
+import Link from 'next/link';
+
 export default function CategoryCard({
   title,
+  href,
 }: {
   title: string, 
+  href: string,
 }) {
   return (
-    <div className="w-64 h-64 m-5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500">
-      <h1 className="text-lg font-bold p-5 pt-48">{title}</h1>
-    </div>
+    <Link href={href}>
+          <div className="sm:w-64 sm:h-64 w-32 h-32 m-5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500">
+        <h1 className="sm:text-lg text-md font-bold sm:p-5 p-3 pt-4/5">{title}</h1>
+      </div>
+    </Link>
   )
 }
