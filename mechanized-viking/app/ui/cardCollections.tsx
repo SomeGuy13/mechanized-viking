@@ -1,4 +1,5 @@
-import CategoryCard from "./categoryCard";
+import CategoryCard from "./cards";
+import { ContentCard } from "./cards";
 
 export default function CategoryCardCollection() {
   return (
@@ -11,4 +12,12 @@ export default function CategoryCardCollection() {
       <CategoryCard title="Music" href="/music" />
     </div>
   );
+}
+
+export function GameCardCollection() {
+  return (
+    <div className="flex flex-wrap justify-center margin-1/12 bg-black">
+      <ContentCard title="Laser Defender" href="https://sharemygame.com/@ScreamingGoat/laser-defender" />
+    </div>
+  )
 }

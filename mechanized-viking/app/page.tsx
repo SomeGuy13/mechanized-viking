@@ -1,4 +1,4 @@
-import CategoryCardCollection from "./ui/categoryCardCollection";
+import CategoryCardCollection from "./ui/cardCollections";
 
 export default function Home() {
   return (
@@ -10,8 +10,9 @@ export default function Home() {
         </div>
       </div>
       <CategoryCardCollection />
-      <div>
-        <h1 className="sm:text-3xl sm:p-6 sm:pl-10 text-2xl p-1">Recent Updates</h1>
+      <div className="sm:p-6 p-1">
+        <h1 className="sm:text-3xl  text-2xl">Recent Updates</h1>
+        <p>Making this website!</p>
       </div>
     </main>
   );
